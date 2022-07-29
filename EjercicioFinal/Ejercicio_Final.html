@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // let numero = parseInt(prompt("Elige un numero del 1 al 5"));
+
+        // switch (numero){
+
+        //     case 1:
+        //         console.log("X"); break;
+            
+        //     case 2:
+        //         console.log("XO"); 
+        //         console.log("OX"); break;
+
+        //     case 3:
+        //         console.log("XOX");
+        //         console.log("OXO");
+        //         console.log("XOX"); break;
+                
+        //     case 4:
+        //         console.log("XOXO");
+        //         console.log("OXOX");
+        //         console.log("XOXO");
+        //         console.log("OXOX"); break;
+
+        //     case 5:
+        //         console.log("XOXOX");
+        //         console.log("OXOXO");
+        //         console.log("XOXOX");
+        //         console.log("OXOXO");
+        //         console.log("XOXOX"); break;
+            
+        //     default:
+        //         console.log("Numero incorrecto"); break;
+
+        // }
+
+        let numero = parseInt(prompt("Elige un numero entre 1 y 5"));
+
+        let patron1 = "X"
+        let patron2 = "O"
+            
+
+        if(numero == 1){
+            console.log(patron1);
+        } 
+            else if(numero == 2){
+                console.log(patron1 + patron2)
+                console.log(patron2 + patron1);
+            }
+                else if (numero == 3){
+                    console.log(patron1 + patron2 + patron1)
+                    console.log(patron2 + patron1 + patron2)
+                    console.log(patron1 + patron2 + patron1);
+                }
+                else if (numero == 4){
+                    console.log(patron1 + patron2 + patron1 + patron2)
+                    console.log(patron2 + patron1 + patron2 + patron1)
+                    console.log(patron1 + patron2 + patron1 + patron2)
+                    console.log(patron2 + patron1 + patron2 + patron1);
+                }
+                else if (numero == 5){
+                    console.log(patron1 + patron2 + patron1 + patron2 + patron1)
+                    console.log(patron2 + patron1 + patron2 + patron1 + patron2)
+                    console.log(patron1 + patron2 + patron1 + patron2 + patron1)
+                    console.log(patron2 + patron1 + patron2 + patron1 + patron2)
+                    console.log(patron1 + patron2 + patron1 + patron2 + patron1);
+                }
+                else{
+                    console.log("Numero incorrecto");
+
+                }
+
+        
+
+
+
+    </script>
+    
+</body>
+</html>

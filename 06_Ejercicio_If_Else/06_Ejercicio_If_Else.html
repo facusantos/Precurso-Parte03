@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio If Else</title>
+</head>
+
+<body>
+    <script>
+        // Tu código aquí
+
+        // let edad = (prompt("Cuantos años tenes?"));
+
+        // if(edad >= 18){
+        //     console.log("ERES MAYOR DE EDAD")}
+        //     else{
+        //         console.log("ERES MENOR DE EDAD")
+        //     }
+
+        let correcto;
+        correcto = 10; 
+
+        let respuesta
+        
+         respuesta = prompt("Adivina el numero entre 1 y 10");
+
+         if (respuesta == correcto)
+         {
+             console.log("Felicitaciones! Adivinaste el numero en tu primer intento")
+         }
+         else
+         {
+            console.log("No adivinaste el numero, te quedan don intentos")
+            respuesta = prompt("Adivina el numero entre 1 y 10")
+
+            if (respuesta == correcto)
+            {
+                console.log("Bien hecho, adivinaste el numero en tu segundo intento")
+            }
+            else {
+                console.log("No adivinaste el numero, tienes un ultimo intento")
+                respuesta = prompt("Adivina el numero entre 1 y 10")
+                
+                if (respuesta == correcto)
+                {
+                    console.log("Adivinaste el numero en tu ultimo intento")
+                }
+                else
+                {
+                    console.log("No te quedan mas intentos")
+                }
+            }
+
+         }
+        
+
+        
+                        
+                    
+                
+            
+            
+            
+        
+    
+    </script>
+</body>
+
+</html>

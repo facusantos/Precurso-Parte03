@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let nombreCarta 
+
+        for( let palo = 1; palo <= 4; palo = palo + 1) {
+            for( let valor = 1; valor <=10; valor = valor + 1){
+                if (valor == 1){
+                    nombreCarta = "As";
+                }
+                else if (valor == 8){
+                    nombreCarta = "JOTA";
+                }
+                else if (valor == 9){
+                    nombreCarta = "REINA";
+                }
+                else if (valor == 10){
+                    nombreCarta = "REY"
+                }
+                else (nombreCarta = valor);
+
+                nombreCarta = nombreCarta + " de ";
+
+                if (palo == 1){
+                    nombreCarta = nombreCarta + " TREBOL";
+                }   
+                else if (palo == 2){
+                    nombreCarta = nombreCarta + " DIAMANTES";
+                }
+                else if (palo == 3){
+                    nombreCarta = nombreCarta + " PICAS";
+                }
+                else if (palo == 4){
+                    nombreCarta = nombreCarta + " CORAZONES";
+                }
+
+                console.log(nombreCarta);
+
+            }
+        }
+
+    </script>
+</body>
+</html>
